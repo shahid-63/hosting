@@ -1,13 +1,30 @@
 <html>
-    <head></head>
-    <body>
+    <head>
         <script>
-            document.write("hello",<br>);
-            document.write("world");
-            </script>
-              </body>
-               </html>
+            function a()
+            {
+                let x=document.getElementById("stn").value;
+                 let a=parseInt(document.getElementById("s1").value);
+                 let b=parseInt(document.getElementById("s2").value);
+                 let c=parseInt(document.getElementById("s3").value);
+                 let d=parseInt(document.getElementById("s4").value);
+                 let e=parseInt(document.getElementById("s5").value);
+                 let av=(a+b+c+d+e)/5;
+                 document.getElementById("avg").innerHTML="student name"=+x+"average"+av;
+            }
+        </script>
+    </head>
+    <body>
+        student name:<input type="text" id="stn"><br>
+        subject 1 marks:<input type="number" id="s1"><br>
+         subject 2 marks:<input type="number" id="s2"><br>
+          subject 3 marks:<input type="number" id="s3"><br>
+           subject 4 marks:<input type="number" id="s4"><br>
+            subject 5 marks:<input type="number" id="s5"><br>
+            <button onclick="a()">average is</button>
+            <p id="avg"></p>
+
+    </body>
+
     
-   
-    
-    
+</html>
